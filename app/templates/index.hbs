@@ -1,0 +1,17 @@
+{{outlet}}
+
+<h1>Welcome to Elite Bloggers</h1>
+
+
+<p>Ask any Question and our members shall contribute towards finding the best answer/solution.</p>
+
+  <h2>Available Questions!</h2>
+  <ul>
+    {{#each model as | question|}}
+    <li>{{question.title}} {{question.content}} {{question.author}}
+      {{question.image}} {{question.date}}</li>
+      {{/each}}
+  </ul>
+
+{{#link-to 'about'}}About{{/link-to}}
+{{#link-to 'contact'}}Contact{{/link-to}}
