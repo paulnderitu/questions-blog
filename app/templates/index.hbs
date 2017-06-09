@@ -8,8 +8,7 @@
   <h2>Available Questions!</h2>
   <ul>
     {{#each model as | question|}}
-    <li>{{question.title}} {{question.content}} {{question.author}}
-      {{question.image}} {{question.date}}</li>
+    {{question-tile question=question}}
       {{/each}}
   </ul>
 

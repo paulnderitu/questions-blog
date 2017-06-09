@@ -1,0 +1,10 @@
+<li>{{question.title}} By {{question.author}}
+   Published on {{question.date}}
+{{#if isImageShowing}}
+<p><img src={{question.image}} alt={{question.type}} {{action 'imageHide' 'questionHide'}}></p>
+<p>{{question.content}}></p>
+  {{else}}
+  <button {{action 'imageShow' 'questionShow'}}>Display Question</button>
+
+  {{/if}}
+</li>

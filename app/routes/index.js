@@ -25,6 +25,6 @@ title: "How to learn code",
 
 export default Ember.Route.extend({
   model() {
-    return questions;
+    return this.store.findAll('question');
   },
 });
