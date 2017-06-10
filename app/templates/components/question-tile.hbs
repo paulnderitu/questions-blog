@@ -1,5 +1,5 @@
-<li>{{question.title}} By {{question.author}}
-   Published on {{question.date}}
+<li>{{#link-to 'question' question.title}} By {{question.author}}
+   Published on {{question.date}}{{/link-to}}
 {{#if isImageShowing}}
 <p><img src={{question.image}} alt={{question.type}} {{action 'imageHide' 'questionHide'}}></p>
 <p>{{question.content}}></p>
@@ -7,6 +7,6 @@
   <button {{action 'imageShow' 'questionShow'}}>Display Question</button>
 
   {{/if}}
-  {{update-question question=question update="update"}}
-  <button {{action 'delete' question}}>Delete Question</button>
+
+
 </li>
