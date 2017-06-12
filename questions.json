@@ -19,5 +19,16 @@
       "image": "https://i.ytimg.com/vi/L1arsLxKgeg/maxresdefault.jpg",
       "date": "5th June"
 
-}]
+}],
+
+"answers": [{
+  "author": "Marto",
+  "rating": 3,
+  "content": "This answer to this question is blah blah blah."
+},{
+  "author": "Njeri",
+  "rating": 6,
+  "content": "Great content. came to read contributions"
+
+  }]
 }

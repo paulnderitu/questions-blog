@@ -1,5 +1,5 @@
 <li>
-  {{#link-to 'question' question.title}} By {{question.author}}
+  {{#link-to 'question' question.id}} By {{question.author}}
    Published on {{question.date}}{{/link-to}}
 {{#if isImageShowing}}
 <p><img src={{question.image}} alt={{question.type}} {{action 'imageHide' 'questionHide'}}></p>

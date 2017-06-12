@@ -1,3 +1,11 @@
-
-
-{{outlet}}
+<div class="container">
+  <header class="jumbotron">
+    <h1>Welcome to Elite Bloggers</h1>
+  </header>
+  {{outlet}}
+  <hr>
+  <footer>
+    {{#link-to 'contact'}}Feel free to ask contact us for any questions!
+    {{/link-to}}
+  </footer>
+</div>

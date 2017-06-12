@@ -1,5 +1,12 @@
-<h2>More Information about {{model.title}} {{model.content}} {{model.author}} {{model.image}} {{model.date}}</h2>
+<h2>More Information about {{model.title}}.
+<br>
+ {{model.content}} by  {{model.author}}
+<img src={{model.image}} alt={{model.title}}>
+<br>
+Created on : {{model.date}}:</h2>
 
 {{update-question question=question update="update"}}
 
-{{question-detail question=model destroyQuestion="destroyQuestion"}}
+{{question-detail question=model destroyQuestion="destroyQuestion" destroyAnswer="destroyAnswer"}}
+
+{{new-answer saveAnswer="saveAnswer" question=model}}
