@@ -2,7 +2,7 @@
 
 <h2>Answers</h2>
 <ul>
-  {{#each question.answers as |answer|}}
+  {{#each sortedAnswers as |answer|}}
   {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
   {{/each}}
 </ul>

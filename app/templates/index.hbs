@@ -14,20 +14,20 @@
   <h2>Available Questions!</h2>
   <ul>
     {{#each model.questions as |question|}}
-    {{question-tile question=question}}
+    {{question-popularity question}} {{question-tile question=question}}
       {{/each}}
   </ul>
 
   {{new-question saveQuestion2="saveQuestion3"}}
-  <h2>All Answers</h2>
+  <!-- <h2>All Answers</h2>
 
-  <!-- <ul>
+  <ul>
     {{#each model.answers as |answer|}}
     <li>{{answer.rating}} - {{answer.content}} - by {{answer.author}}</li>
     {{/each}}
-  </ul> -->
+  </ul>
 
-  <!-- {{new-answer saveAnswer="saveAnswer"}} -->
+  {{new-answer saveAnswer="saveAnswer"}} -->
 
   <hr>
 
